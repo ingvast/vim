@@ -8,9 +8,14 @@ set nobk
 set nocompatible
 set ruler		" show the cursor position all the time
 
+execute pathogen#infect()
+
+filetype plugin indent on
+
 "highlight normal guibg=#D0D0D0
+set background=light
+colorscheme solarized
 if has('gui_running')
-	colorscheme desert
 	" set lsp=1
 	set guifont=Liberation\ Mono\ 10,Liberation_Mono:h8:cANSI,Consolas:h11
 	set guioptions-=T
@@ -217,7 +222,6 @@ if filereadable( $VIMRUNTIME . "/defaults.vim" )
 	so $VIMRUNTIME/defaults.vim
 endif
 
-execute pathogen#infect()
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
