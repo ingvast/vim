@@ -1,4 +1,3 @@
-set path+=$BIOSERVO
 set diffopt+=iwhite
 
 set fileencodings=ucs-bom,utf-8,latin1
