@@ -1,0 +1,3 @@
+[submodule "bundle/bundle/dart-vim-plugin"]
+	path = bundle/bundle/dart-vim-plugin
+	url = https://github.com/dart-lang/dart-vim-plugin
